@@ -1,0 +1,73 @@
+[data-theme="dark"] {
+  --border: #2f3342;
+  --sidebar-bg: #1b1e29;
+  --page-bg: #14161f;
+  --text-main: #e8eaf0;
+  --text-soft: #9aa3b2;
+  --active-bg: #2a2f3f;
+  --hover-bg: #232736;
+  --overlay: rgba(0, 0, 0, 0.7);
+
+  body,
+  .app-sticky,
+  .navbar,
+  .navbar-menu,
+  .navbar-item {
+    background-color: var(--page-bg);
+    color: var(--text-main);
+  }
+
+  .navbar-item:hover,
+  .navbar-item.is-active {
+    background-color: var(--hover-bg);
+  }
+
+  .app-title,
+  .app-txt,
+  .title,
+  .subtitle,
+  .app-subtitle,
+  .content,
+  .menu-label {
+    color: var(--text-main);
+  }
+
+  .box,
+  .card,
+  .modal-card-body,
+  .modal-card-head,
+  .modal-card-foot,
+  .app-sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--text-main);
+  }
+
+  .modal-card-title {
+    color: var(--text-main);
+  }
+
+  .table {
+    background-color: var(--sidebar-bg);
+    color: var(--text-main);
+
+    th,
+    td {
+      color: var(--text-main);
+      border-color: var(--border);
+    }
+
+    &.is-striped tbody tr:not(.is-selected):nth-child(even) {
+      background-color: var(--hover-bg);
+    }
+  }
+
+  .input {
+    background-color: var(--hover-bg);
+    color: var(--text-main);
+    border-color: var(--border);
+  }
+
+  .app-sublist-item:hover {
+    background: var(--hover-bg);
+  }
+}
